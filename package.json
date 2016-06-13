@@ -1,0 +1,16 @@
+{
+  "name": "wimdk",
+  "version": "1.0.0",
+  "description": "Angular application for managing money owned to other people.",
+  "main": "index.js",
+  "scripts": {
+      "start": "live-server"
+  },
+  "author": "Thomas Kaczmarek",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0",
+    "live-server": "^1.0.0"
+  }
+}
