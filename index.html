@@ -2,8 +2,20 @@
 <head>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+
+     .thumbnailImg {
+	 border-radius: 25px;
+	 padding: 10px;
+	 font-size: 6em;
+	 text-align: center;
+	 color: white;
+	 }
+     
+    </style>
 
 </head>
 <body>
@@ -32,56 +44,75 @@
     </nav>
 
     <div class="container">
-	<div class="col-sm-4">
-	    <div class="panel panel-success">
-		<div class="panel-heading">Empfangene Zahlung</div>
-		<div class="panel-body">
-		    <div class="col-xs-2">
-			<span class="glyphicon glyphicon-euro"></span>
+
+	<div class="row">
+
+	    <div class="col-xs-12 col-sm-6">
+		<div class="thumbnail">
+		    <div class="col-xs-12 thumbnailImg bg-danger" >
+			<span class="glyphicon glyphicon-user "> </span><span class="glyphicon glyphicon-chevron-right "></span> <span class="glyphicon glyphicon-user "></span>
 		    </div>
-		    <div class="col-xs-9">
-			Zahlung von nem Typen von 50 Euro erhalten.
+		    <div class="caption">
+			<h3>Abgang</h3>
+			Zahlung an Nutzer 2 über 50 Euro.
+			<div>
+			    <button type="button" class="btn btn-primary">Annehem <span class="glyphicon glyphicon-thumbs-up"></span></button>
+			    <button type="button" class="btn btn-danger">Ablehnen <span class="glyphicon glyphicon-thumbs-down"></span></button>
+			</div>
 		    </div>
 		</div>
-		<div class="panel-footer">
-		    <button type="button" class="btn btn-primary">Open</button>
-		    <button type="button" class="btn btn-danger">Decline</button>
-		</div>
 	    </div>
-	</div>
-	<div class="col-sm-4">
-	    <div class="panel panel-danger">
-		<div class="panel-heading">Panel Heading</div>
-		<div class="panel-body">Panel Body</div>
-		<div class="panel-footer">
-		    <button type="button" class="btn btn-primary">Open</button>
-		    <button type="button" class="btn btn-danger">Decline</button>
-		</div>
 
-	    </div>
-	</div>
-	<div class="col-sm-4">
-	    <div class="panel panel-danger">
-		<div class="panel-heading">Panel Heading</div>
-		<div class="panel-body">Panel Body</div>
-		<div class="panel-footer">
-		    <button type="button" class="btn btn-primary">Open</button>
-		    <button type="button" class="btn btn-danger">Decline</button>
+	    <div class="col-xs-12 col-sm-6">
+		<div class="thumbnail">
+		    <div class="col-xs-12 thumbnailImg bg-success">
+			<span class="glyphicon glyphicon-user "> </span><span class="glyphicon glyphicon-chevron-left "></span> <span class="glyphicon glyphicon-user "></span>
+		    </div>
+		    <div class="caption">
+			<h3>Eingang</h3>
+			Zahlung von Nutzer 2 über 50 Euro.
+			<div>
+			    <button type="button" class="btn btn-primary">Annehem <span class="glyphicon glyphicon-thumbs-up"></span></button>
+			    <button type="button" class="btn btn-danger">Ablehnen <span class="glyphicon glyphicon-thumbs-down"></span></button>
+			</div>
+		    </div>
 		</div>
-
 	    </div>
-	</div>
-	<div class="col-sm-4">
-	    <div class="panel panel-danger">
-		<div class="panel-heading">Panel Heading</div>
-		<div class="panel-body">Panel Body</div>
-		<div class="panel-footer">
-		    <button type="button" class="btn btn-primary">Open</button>
-		    <button type="button" class="btn btn-danger">Decline</button>
+
+	    <div class="col-xs-12 col-sm-6">
+		<div class="thumbnail">
+		    <div class="col-xs-12 thumbnailImg bg-danger" >
+			<span class="glyphicon glyphicon-user "> </span><span class="glyphicon glyphicon-chevron-right "></span> <span class="glyphicon glyphicon-user "></span>
+		    </div>
+		    <div class="caption">
+			<h3>Abgang</h3>
+			Zahlung an Nutzer 2 über 50 Euro.
+			<div>
+			    <button type="button" class="btn btn-primary">Annehem <span class="glyphicon glyphicon-thumbs-up"></span></button>
+			    <button type="button" class="btn btn-danger">Ablehnen <span class="glyphicon glyphicon-thumbs-down"></span></button>
+			</div>
+		    </div>
 		</div>
-
 	    </div>
+
+	    <div class="col-xs-12 col-sm-6">
+		<div class="thumbnail">
+		    <div class="col-xs-12 thumbnailImg bg-success">
+			<span class="glyphicon glyphicon-user "> </span><span class="glyphicon glyphicon-chevron-left "></span> <span class="glyphicon glyphicon-user "></span>
+		    </div>
+		    <div class="caption">
+			<h3>Eingang</h3>
+			Zahlung von Nutzer 2 über 50 Euro.
+			<div>
+			    <button type="button" class="btn btn-primary">Annehem <span class="glyphicon glyphicon-thumbs-up"></span></button>
+			    <button type="button" class="btn btn-danger">Ablehnen <span class="glyphicon glyphicon-thumbs-down"></span></button>
+			</div>
+		    </div>
+		</div>
+	    </div>
+
+
 	</div>
-	
+
     </div>
 </body>
