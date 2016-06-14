@@ -5,17 +5,24 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="timeline.css";
+    <link rel="stylesheet" href="timeline.css">
 
     <style>
 
-     .thumbnailImg {
-	 border-radius: 25px;
-	 padding: 10px;
-	 font-size: 6em;
+     .userThumbnail {
+	 color: #fff;
+	 width: 2em;
+	 height: 2em;
+	 line-height: 2em;
+	 font-size: 1em;
 	 text-align: center;
-	 color: white;
-	 }
+	 background-color: #999999;
+	 z-index: 100;
+	 border-top-right-radius: 25%;
+	 border-top-left-radius: 25%;
+	 border-bottom-right-radius: 25%;
+	 border-bottom-left-radius: 25%;
+     }
      
     </style>
 
@@ -50,10 +57,10 @@
 	<ul class="timeline">
 	    
 	    <li class="timeline-inverted">
-		<div class="timeline-badge danger"><i class="glyphicon glyphicon-chevron-right"></i></div>
+		<div class="timeline-badge danger"><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-chevron-right"></i></div>
 		<div class="timeline-panel">
 		    <div class="timeline-heading">
-			<h4 class="timeline-title">Abgang</h4>
+			<h4 class="timeline-title">Abgang <i class="glyphicon glyphicon-user userThumbnail pull-right"></i></h4>
 			<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>vor 1. Stunde</small></p>
 		    </div>
 		    <div class="timeline-body">
@@ -71,10 +78,10 @@
 	    </li>
 
 	    <li>
-		<div class="timeline-badge success"><i class="glyphicon glyphicon-chevron-right"></i></div>
+		<div class="timeline-badge success"><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-chevron-left"></i></div>
 		<div class="timeline-panel">
 		    <div class="timeline-heading">
-			<h4 class="timeline-title">Zugang</h4>
+			<h4 class="timeline-title">Zugang <i class="glyphicon glyphicon-user userThumbnail pull-right"></i></h4>
 			<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>vor 1. Stunde</small></p>
 		    </div>
 		    <div class="timeline-body">
@@ -92,10 +99,10 @@
 	    </li>
 
 	    <li>
-		<div class="timeline-badge success"><i class="glyphicon glyphicon-chevron-right"></i></div>
+		<div class="timeline-badge success"><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-chevron-left"></i></div>
 		<div class="timeline-panel">
 		    <div class="timeline-heading">
-			<h4 class="timeline-title">Zugang</h4>
+			<h4 class="timeline-title">Zugang <i class="glyphicon glyphicon-user userThumbnail pull-right"></i></h4>
 			<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>vor 3. Stunde</small></p>
 		    </div>
 		    <div class="timeline-body">
