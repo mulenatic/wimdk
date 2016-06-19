@@ -40,8 +40,8 @@
 
 	    <div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav">
-		    <li class="active"><a href="#">Home</a></li>
-		    <li><a href="#">Page 1</a></li>
+		    <li class="active"><a href="#">Alle Transaktionen</a></li>
+		    <li><a href="#">Für Nutzer</a></li>
 		</ul>
 
 		<ul class="nav navbar-nav navbar-right">
@@ -53,84 +53,103 @@
 
     <div class="container">
 
-	<ul class="timeline">
-	    
-	    <li class="timeline-inverted">
-		<div class="timeline-badge danger"><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-chevron-right"></i></div>
-		<div class="timeline-panel">
-		    <div class="timeline-heading">
-			<h4 class="timeline-title">Abgang <span class="text-danger">-50,00 Euro</span><i class="glyphicon glyphicon-user userThumbnail text-success pull-right"></i></h4>
-			<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> vor 1. Stunde</small></p>
-		    </div>
-		    <div class="timeline-body">
-			<div>
-			    <ul>
-				<li>Benutzer: user1</li>
-				<li>Grund: Monatsbeitrag Haushalt</li>
-			    </ul>
-			</div>
-			<hr>
-			<div class="btn-group-sm pull-right">
-			    <button type="button" class="btn btn-success">Annehmen <i class="glyphicon glyphicon-thumbs-up"></i></button>
-			    <button type="button" class="btn btn-danger">Ablehnen <i class="glyphicon glyphicon-thumbs-down"></i></button>
-			    <button type="button" class="btn btn-primary">Details <i class="glyphicon glyphicon-info-sign"></i></button>
-			</div>
-		    </div>
-
-	    </li>
-
-	    <li>
-		<div class="timeline-badge success"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-user"></i></div>
-		<div class="timeline-panel">
-		    <div class="timeline-heading">
-			<h4 class="timeline-title">Zugang  <span class="text-success">30,99 Euro</span><i class="glyphicon glyphicon-user userThumbnail text-warning pull-right"></i></h4>
-			<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> vor 1. Stunde</small></p>
-		    </div>
-		    <div class="timeline-body">
-			<div>
-			    <ul>
-				<li>Benutzer: user2</li>
-				<li>Grund: Getränkerechnung</li>
-				<li>Ort: Kneipe</li>
-				<li>Beschreibung: War ein lustiger Abend. user2 hatte zu wenig Geld dabei...</li>
-				<li>Rückzuzahlen bis: 01.07.2016</li>
-			    </ul>
-			</div>
-			<hr>
-			<div class="btn-group-sm pull-right">
-			    <button type="button" class="btn btn-success">Annehmen <i class="glyphicon glyphicon-thumbs-up"></i></button>
-			    <button type="button" class="btn btn-danger">Ablehnen <i class="glyphicon glyphicon-thumbs-down"></i></button>
-			    <button type="button" class="btn btn-primary">Details <i class="glyphicon glyphicon-info-sign"></i></button>
-			</div>
-		    </div>
-
-	    </li>
-
-	    <li>
-		<div class="timeline-badge success"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-user"></i></div>
-		<div class="timeline-panel">
-		    <div class="timeline-heading">
-			<h4 class="timeline-title">Zugang <span class="text-success">9,39 Euro</span><i class="glyphicon glyphicon-user userThumbnail text-success pull-right"></i></h4>
-			<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> vor 3. Stunde</small></p>
-		    </div>
-		    <div class="timeline-body">
-			<div>
-			    <ul>
-				<li>Benutzer: user1</li>
-				<li>Grund: Wasserschlauch</li>
-				<li>Ort: Bauhaus</li>
-			    </ul>
-			</div>
-			<hr>
-			<div class="btn-group-sm pull-right">
-			    <button type="button" class="btn btn-primary">Details <i class="glyphicon glyphicon-info-sign"></i></button>
-			</div>
-		    </div>
-
-	    </li>
-
-	</ul>
-
-
+	<div class="col-xs-8 col-md-push-2">
+	    <div class="panel panel-default">
+		<div class="panel-heading">Aktuelles Saldo für Nutzer: <strong>Alle</strong></div>
+		<div class="panel-body">
+		    <h3>Saldo: <span class="text-danger">9,62 Euro</span></h3>
+		    <ul>
+			<li>Offene Tranksaktionen: 2</li>
+			<li># Transkationen letzte Woche: 3</li>
+		    </ul>
 		</div>
+	    </div>
+	</div>
+
+	<div class="col-xs-12">
+	    <ul class="timeline">
+
+		<li class="timeline-inverted">
+		    <div class="timeline-badge danger"><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-chevron-right"></i></div>
+		    <div class="timeline-panel">
+			<div class="timeline-heading">
+			    <h4 class="timeline-title">Abgang <span class="text-danger">-50,00 Euro</span> <i class="glyphicon glyphicon-user userThumbnail text-success pull-right"></i></h4>
+			    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> vor 1. Stunde</small> <span class="badge">unbestaetigt</span></p>
+			</div>
+			<div class="timeline-body">
+			    <div>
+				<ul>
+				    <li>Benutzer: user1</li>
+				    <li>Grund: Monatsbeitrag Haushalt</li>
+				</ul>
+			    </div>
+			    <hr>
+			    <div class="btn-group-sm pull-right">
+				<button type="button" class="btn btn-default">Bestätigen <i class="glyphicon glyphicon-thumbs-up"></i></button>
+				<button type="button" class="btn btn-default">Ablehnen <i class="glyphicon glyphicon-thumbs-down"></i></button>
+				<button type="button" class="btn btn-default">Details <i class="glyphicon glyphicon-info-sign"></i></button>
+			    </div>
+			</div>
+		    </div>
+
+		</li>
+
+		<li>
+		    <div class="timeline-badge success"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-user"></i></div>
+		    <div class="timeline-panel">
+			<div class="timeline-heading">
+			    <h4 class="timeline-title">Zugang  <span class="text-success">30,99 Euro</span><i class="glyphicon glyphicon-user userThumbnail text-warning pull-right"></i></h4>
+			    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> vor 1. Stunde</small> <span class="badge">unbestaetigt</span></p>
+			</div>
+			<div class="timeline-body">
+			    <div>
+				<ul>
+				    <li>Benutzer: user2</li>
+				    <li>Grund: Getränkerechnung</li>
+				    <li>Ort: Kneipe</li>
+				    <li>Beschreibung: War ein lustiger Abend. user2 hatte zu wenig Geld dabei...</li>
+				    <li>Rückzuzahlen bis: 01.07.2016</li>
+				</ul>
+			    </div>
+			    <hr>
+			    <div class="btn-group-sm pull-right">
+				<button type="button" class="btn btn-default">Bestätigen <i class="glyphicon glyphicon-thumbs-up"></i></button>
+				<button type="button" class="btn btn-default">Ablehnen <i class="glyphicon glyphicon-thumbs-down"></i></button>
+				<button type="button" class="btn btn-default">Details <i class="glyphicon glyphicon-info-sign"></i></button>
+			    </div>
+			</div>
+		    </div>
+
+		</li>
+
+		<li>
+		    <div class="timeline-badge success"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-user"></i></div>
+		    <div class="timeline-panel">
+			<div class="timeline-heading">
+			    <h4 class="timeline-title">Zugang <span class="text-success">9,39 Euro</span><i class="glyphicon glyphicon-user userThumbnail text-success pull-right"></i></h4>
+			    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> vor 3. Stunde</small> <span class="badge">offen</span></p>
+			</div>
+			<div class="timeline-body">
+			    <div>
+				<ul>
+				    <li>Benutzer: user1</li>
+				    <li>Grund: Wasserschlauch</li>
+				    <li>Ort: Bauhaus</li>
+				</ul>
+			    </div>
+			    <hr>
+			    <div class="btn-group-sm pull-right">
+				<button type="button" class="btn btn-default">Abschließen <i class="glyphicon glyphicon-check"></i></button>
+				<button type="button" class="btn btn-default">Details <i class="glyphicon glyphicon-info-sign"></i></button>
+				
+			    </div>
+			</div>
+		    </div>
+
+		</li>
+
+	    </ul>
+
+
+	</div>
 </body>
