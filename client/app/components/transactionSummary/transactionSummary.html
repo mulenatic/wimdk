@@ -1,11 +1,11 @@
 <div class="col-xs-8 col-md-push-2">
     <div class="panel panel-default">
-	<div class="panel-heading">Aktuelles Saldo für Nutzer: <strong>Alle</strong></div>
+	<div class="panel-heading">Aktuelles Saldo für Nutzer: <strong>{{users}}</strong></div>
 	<div class="panel-body">
-	    <h3>Saldo: <span class="text-danger">9,62 Euro</span></h3>
+	    <h3>Saldo: <span class="text-danger">{{saldo | currency:"EUR":"true" }}</span></h3>
 	    <ul>
-		<li>Offene Tranksaktionen: 2</li>
-		<li># Transkationen letzte Woche: 3</li>
+		<li>Offene Tranksaktionen: {{openTransactions}}</li>
+		<li># Transkationen letzte Woche: {{transactionsLastWeek}}</li>
 	    </ul>
 	</div>
     </div>
