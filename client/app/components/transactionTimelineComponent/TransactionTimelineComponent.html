@@ -20,6 +20,10 @@
 			    <dd class="col-xs-9">{{transaction.user}}</dd>
 			    <dt class="col-xs-3">Grund</dt>
 			    <dd class="col-xs-9">{{transaction.grund}}</dd>
+			    <div *ngFor="let sonstiges of transaction.sonstiges">
+				<dt class="col-xs-3">{{sonstiges.label}}</dt>
+				<dd class="col-xs-9">{{sonstiges.value}}</dd>
+			    </div>			    
 			</dl>
 		    </div>
 		    
