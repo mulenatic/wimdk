@@ -16,7 +16,7 @@ export class Transaction {
         private _betrag: number,
         private _user: string,
         private _grund: string,
-        private _erstellDatum: Date,
+        private _creationDate: Date,
         private _bestaetigt: boolean,
         private _sonstiges: Array<SonstigesPair>
     ) {
@@ -26,7 +26,7 @@ export class Transaction {
     get betrag(): number { return this._betrag; }
     get user(): string { return this._user; }
     get grund(): string { return this._grund; }
-    get erstellDatum(): Date { return this._erstellDatum; }
+    get creationDate(): Date { return this._creationDate; }
     get bestaetigt(): boolean { return this._bestaetigt; }
     get sonstiges(): Array<SonstigesPair> { return this._sonstiges; }
 
@@ -73,13 +73,21 @@ export class TransactionSearchService {
 
         let result: Array<Transaction> = new Array();
 
+
+        let now: Date = new Date();
+        let year: number = now.getFullYear();
+        let month: number = now.getMonth();
+        let day: number = now.getDate();
+        let hour: number = now.getHours();
+        let min: number = now.getMinutes();
+
         let transaction: Transaction = new Transaction(
-            -50, "user1", "Monatsbeitrag Haushalt", new Date(2016, 6, 22, 17, 0, 0), false, new Array());
+            -50, "user1", "Monatsbeitrag Haushalt", new Date(year, month, day, hour - 1, min, 0), false, new Array());
         result.push(transaction);
 
 
         transaction = new Transaction(
-            30.99, "user2", "Bierchen in der Kneipe", new Date(2016, 6, 22, 16, 0, 0), false, new Array());
+            30.99, "user2", "Bierchen in der Kneipe", new Date(year, month, day, hour - 2, min, 0), false, new Array());
         result.push(transaction);
 
         let sonstiges: Array<SonstigesPair> = new Array<SonstigesPair>();
@@ -88,7 +96,7 @@ export class TransactionSearchService {
 
 
         transaction = new Transaction(
-            9.39, "user1", "Wasserschlauch", new Date(2016, 6, 22, 15, 0, 0), true, sonstiges);
+            9.39, "user1", "Wasserschlauch", new Date(year, month, day - 1, hour, min, 0), true, sonstiges);
         result.push(transaction);
 
         return result;

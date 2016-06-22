@@ -17,7 +17,6 @@ export class ConfirmedBadgeComponent {
             result = "unbestätigt";
         }
 
-        console.log("result = " + result + ", isConfirmed = " + this.isConfirmed);
         return result;
     }
 
