@@ -1,22 +1,20 @@
 import {Component} from "@angular/core";
 
+import {TransactionSummary, TransactionSearchService} from "../../service/transactionSearch/TransactionSearchService";
+
 @Component({
     selector: "transactionSummary",
-    templateUrl: "app/components/transactionSummary/transactionSummary.html"
+    templateUrl: "app/components/transactionSummary/transactionSummary.html",
+    providers: [TransactionSearchService]
 })
 export class TransactionSummaryComponent {
 
-    users: string;
-    saldo: number;
-    openTransactions: number;
-    transactionsLastWeek: number;
+    transactionSummary: TransactionSummary;
 
-    constructor() {
+    constructor(transactionSearchService: TransactionSearchService) {
 
-        this.users = "Alle";
-        this.saldo = -9.63;
-        this.openTransactions = 2;
-        this.transactionsLastWeek = 3;
+        this.transactionSummary = transactionSearchService.getTransactionSummary();
+        console.log("transactionsummary: " + this.transactionSummary.users);
 
     }
 
