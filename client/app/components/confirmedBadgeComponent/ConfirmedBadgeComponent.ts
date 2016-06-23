@@ -10,11 +10,9 @@ export class ConfirmedBadgeComponent {
 
     getDisplayValue(): string {
 
-        let result: string = "unbekannt";
+        let result: string = "unbestätigt";
         if (this.isConfirmed) {
             result = "bestätigt";
-        } else {
-            result = "unbestätigt";
         }
 
         return result;
