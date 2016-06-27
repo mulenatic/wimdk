@@ -14,18 +14,19 @@
 		
 		<div class="timeline-body">
 
-		    <div class="container">
-			<dl class="dl-horizontal">
-			    <dt class="col-xs-3">Benutzer</dt>
-			    <dd class="col-xs-9">{{transaction.user}}</dd>
-			    <dt class="col-xs-3">Grund</dt>
-			    <dd class="col-xs-9">{{transaction.grund}}</dd>
-			    <div *ngFor="let sonstiges of transaction.sonstiges">
-				<dt class="col-xs-3">{{sonstiges.label}}</dt>
-				<dd class="col-xs-9">{{sonstiges.value}}</dd>
-			    </div>			    
-			</dl>
-		    </div>
+
+		    <dl class="dl-horizontal">
+			<dt>Benutzer</dt>
+			<dd>{{transaction.user}}</dd>
+			<dt>Grund</dt>
+			<dd>{{transaction.grund}}</dd>
+
+			<div *ngFor="let sonstiges of transaction.sonstiges">
+			    <dt>{{sonstiges.label}}</dt>
+			    <dd>{{sonstiges.value}}</dd>
+			</div>
+		    </dl>
+
 		    
 		    <hr>
 		    <div class="btn-group-sm pull-right">
