@@ -3,7 +3,7 @@
 
 	<li *ngFor="let transaction of transactions" [class.timeline-inverted]="transaction.betrag < 0" >
 
-	    <div class="timeline-badge" [class.danger]="transaction.betrag < 0" [class.success]="transaction.betrag >= 0"><i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-chevron-right"></i></div>
+	    <trans-timeline-badge [betrag]="transaction.betrag"></trans-timeline-badge>
 
 	    <div class="timeline-panel">
 
